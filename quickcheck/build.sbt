@@ -6,6 +6,7 @@ scalacOptions ++= Seq("-deprecation")
 
 // grading libraries
 libraryDependencies += "junit" % "junit" % "4.10" % "test"
+libraryDependencies += "org.scalatest" % "scalatest_2.11" % "2.0" % "test"
 libraryDependencies ++= assignmentsMap.value.values.flatMap(_.dependencies).toSeq
 
 // include the common dir
