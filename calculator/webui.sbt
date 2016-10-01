@@ -7,4 +7,4 @@ lazy val webUI = project.in(file("web-ui")).
       (scalaSource in (root, Compile)).value / "calculator",
     libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.8.0",
     persistLauncher := true
-  )
+  ) dependsOn root
